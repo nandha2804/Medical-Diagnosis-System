@@ -15,7 +15,6 @@ __Capstone-2: LPU | CAP347 CARGC0019__
   * [Quick start](#Quick-start)
   * [Screenshots](#screenshots)
   * [Technical Aspect](#technical-aspect)
-  * [Team](#team)
   * [License](#license)
   
 
