@@ -1,0 +1,137 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+<style>
+    h4{
+        align-items: center;
+        color: cornflowerblue;
+    }
+</style>
+
+<h2 style="text-align: center;">This is basic Machine Learning and Deep Learning based WebApp.</h2>
+<br>
+    
+<div style="justify-content: center; height: 100%; margin: 0; display: flex;align-items: center;">
+<div style="box-shadow: 0 0 5px black; display: flexbox; margin: 0 10% 0 10%;">
+    <div style="display: flex; margin: 0 20px;">
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 25px;">
+                <h4>Diabetes</h4>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Urinating often.</li>
+                    <li>Feeling very thirsty.</li>
+                    <li>Extreme fatigue.</li>
+                    <li>Blurry vision.</li>
+                </ul>
+                <a class="nav-link" href="{{ url_for('diabetesPage') }}" style="text-decoration: none; text-align: center; display: block;">Diabetes Predictor</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 25px;">
+                <h4>Breast Cancer</h4>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>A breast lump or thickening</li>
+                    <li>shape or appearance</li>
+                    <li>over the breast</li>
+                    <li>Redness or pitting</li>
+                </ul>
+                <a class="nav-link" href="{{ url_for('cancerPage') }}" style="text-decoration: none; text-align: center; display: block;">Breast Cancer Predictor</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 25px;">
+                <h4>kidney disease</h4>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Nausea</li>
+                    <li>Vomiting</li>
+                    <li>Fatigue and weakness</li>
+                    <li>Muscle twitches, and cramps</li>
+                </ul>
+                <a class="nav-link" href="{{ url_for('kidneyPage') }}" style="text-decoration: none; text-align: center; display: block;">kidney disease Predictor</a>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 25px;">
+                <h4>Liver disease</h4>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>swelling of abdomen and legs</li>
+                    <li>color of your stool and urine</li>
+                    <li>yellowing of the skin and eyes</li>
+                    <li>Muscle twitches, cramps</li>
+                </ul>
+                <a class="nav-link" href="{{ url_for('liverPage') }}" style="text-decoration: none; text-align: center; display: block;">Liver disease Predictor</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div style="display: flex;margin: 0 20px;">
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 25px;">
+                <h4>Malaria</h4>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Fever</li>
+                    <li>Chills</li>
+                    <li>Headache</li>
+                    <li>Nausea and vomiting</li>
+                </ul>
+                <a class="nav-link" href="{{ url_for('malariaPage') }}" style="text-decoration: none; text-align: center; display: block;">Malaria Predictor</a>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 25px;">
+                <h4>Pneumonia</h4>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Cough, greenish, yellow mucus.</li>
+                    <li>Fever, sweating and shaking chills.</li>
+                    <li>Shortness of breath.</li>
+                    <li>Rapid, shallow breathing.</li>
+                </ul>
+                <a class="nav-link" href="{{ url_for('pneumoniaPage') }}" style="text-decoration: none; text-align: center; display: block;">Pneumonia Predictor</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 25px;">
+                <h4>Heart Disease</h4>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Chest Pain or Discomfort</li>
+                    <li>Shortness of Breath</li>
+                    <li>Fatigue and Weakness</li>
+                    <li>Swelling in the Legs, Ankles</li>
+                </ul>
+                <a class="nav-link" href="{{ url_for('heartPage') }}" style="text-decoration: none; text-align: center; display: block;">Heart Disease Predictor</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 25px;">
+                <h4>Cardio ECG Disease</h4>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Chest Pain or Discomfort</li>
+                    <li>Palpitations</li>
+                    <li>Shortness of breath</li>
+                    <li>Dizziness or Fainting</li>
+                </ul>
+                <a class="nav-link" href="{{ url_for('cardioPage') }}" style="text-decoration: none; text-align: center; display: block;">Cardio ECG Predictor</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
